@@ -102,7 +102,7 @@ const Info =  styled.div`
 
 const ProductAmountContainer = styled.div`
      display: flex;
-     align-items: center
+     align-items: center;
      justify-content: center;
      margin-bottom: 20px;
      ${mobile({margin: "15px 0px"})}

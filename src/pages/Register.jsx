@@ -15,12 +15,14 @@ const Container = styled.div`
      background-repeat: no-repeat;
      background-size: cover;
      background-position: center center;
+     ${mobile({height: "100%"})}
 `
 
 const Wrapper = styled.div`
      padding: 20px;
      width: 40%;
-     background-color: white;
+     display: flex;
+     flex-direction: column;
      ${mobile({width: "75%"})}
 
 `
@@ -74,7 +76,6 @@ const Register = () => {
                     the <b>PRIVACY POLICY</b>
                  </Agreement>    
                     <Button>CREATE</Button>
-                
             </Form>
     </Wrapper>
     </Container>
