@@ -3,6 +3,7 @@ import { Search, ShoppingCartOutlined } from '@material-ui/icons'
 import React from 'react'
 import styled from 'styled-components'
 import {mobile} from "../responsive"
+import {mobileL} from "../responsive"
 import {useSelector} from "react-redux" 
 import {Link} from "react-router-dom"
 
@@ -16,6 +17,7 @@ const Wrapper = styled.div`
  align-items: center;
  justify-content: space-between;
  ${mobile({padding: "10px 0px"})}
+ ${mobileL({padding: "10px 0px"})}
 
 `
 const Left = styled.div`
@@ -27,6 +29,7 @@ const Language = styled.span`
   font-size: 14px;
   cursor: pointer;
   ${mobile({display: "none"})}
+  ${mobileL({display: "none"})}
 
 `
 const SearchContainer = styled.div`
@@ -39,6 +42,7 @@ const SearchContainer = styled.div`
 const Input = styled.input`
      border: none;
   ${mobile({width: "50px"})}
+  ${mobileL({width: "50px"})}
 
 `
 
@@ -49,9 +53,10 @@ const Center = styled.div`
 const Right = styled.div`
     flex: 1;
     display: flex;
-    aligh-item: center;
+    align-item: center;
     justify-content: flex-end;
   ${mobile({flex: "3", justifyContent: "center"})}
+  ${mobileL({marginRight: "20px"})}
 
 `
 const Logo = styled.h1`
@@ -66,6 +71,7 @@ const MenuItem = styled.div`
    margin-left: 25px;
    color: black;
   ${mobile({fontSize: "12px", marginLeft: "10px"})}
+  ${mobileL({fontSize: "12px", marginLeft: "5px"})}
 
 `
 

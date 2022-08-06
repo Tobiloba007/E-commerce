@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { mobile } from '../responsive'
+import { mobileL } from '../responsive'
 
 
 
@@ -16,14 +17,16 @@ const Container = styled.div`
      background-size: cover;
      background-position: center center;
      ${mobile({height: "100%"})}
+     ${mobileL({height: "100%"})}
 `
 
 const Wrapper = styled.div`
      padding: 20px;
-     width: 40%;
+     width: 50%;
      display: flex;
      flex-direction: column;
      ${mobile({width: "75%"})}
+     ${mobileL({width: "75%"})}
 
 `
 
@@ -56,6 +59,7 @@ const Button = styled.button`
       background-color: teal;
       color: white;
       cursor: pointer;
+      ${mobileL({padding: "10px 20px 10px 10px", marginLeft: "30%"})}
 `
 
 

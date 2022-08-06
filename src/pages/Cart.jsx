@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar'
 import Announcement from '../components/Announcement'
 import { Add, Remove } from '@material-ui/icons'
 import { mobile } from '../responsive'
+import { mobileL } from '../responsive'
 
 
 
@@ -38,6 +39,7 @@ const TopButton = styled.button`
 `
 const TopTexts = styled.div`
       ${mobile({display: "none"})}
+      ${mobileL({display: "none"})}
      
 `
 
@@ -51,6 +53,7 @@ const Bottom =  styled.div`
      display: flex;
      justify-content: space-between;
      ${mobile({flexDirection: "column"})}
+     ${mobileL({flexDirection: "column"})}
 
 `
 const Info =  styled.div`
@@ -133,6 +136,7 @@ const Summary =  styled.div`
       border-radius: 10px;
       padding: 20px;
       height: 50vh;
+      ${mobileL({marginTop: "30px"})}
 `
 
 const SummaryTitle = styled.h1`

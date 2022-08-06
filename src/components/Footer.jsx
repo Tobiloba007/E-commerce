@@ -2,11 +2,13 @@ import React from 'react'
 import styled from 'styled-components'
 import {Facebook, Instagram, Twitter, Pinterest, LocationOn, LocalPhone, MailOutline} from '@material-ui/icons'
 import { mobile } from '../responsive'
+import { mobileL } from '../responsive'
 
 
 const Container = styled.div`
     display: flex;
   ${mobile({flexDirection: "column"})}
+  ${mobileL({flexDirection: "column"})}
 
 `
 const Left = styled.div`
@@ -15,12 +17,15 @@ const Left = styled.div`
      flex-direction: column;
      padding: 20px;
 `
-const Logo = styled.h1``
+const Logo = styled.h1`
+ ${mobileL({textAlign: "center"})}
+`
 const Desc = styled.p`
     margin: 20px 0px;
 `
 const SocialContainer = styled.div`
     display: flex;
+    ${mobileL({display: "flex", justifyContent: "center"})}
 `
 const SocialIcon = styled.div`
      width: 40px;
@@ -70,6 +75,7 @@ const ContactItem = styled.div`
 `
 const Payment = styled.img`
        width: 50%;
+       ${mobileL({marginLeft: "25%"})}
 `
 
 const Footer = () => {

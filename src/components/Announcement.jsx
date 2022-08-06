@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import {mobileL} from '../responsive'
 
 const Container = styled.div`
     height: 30px;
@@ -10,6 +11,7 @@ const Container = styled.div`
     justify-content: center;
     font-size: 14px;
     font-weight: 500; 
+    ${mobileL({width: "100%"})}
 `
 
 const Announcement = () => {

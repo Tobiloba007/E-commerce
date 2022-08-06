@@ -8,10 +8,10 @@ export const mobile = (props) => {
     `
 };
 
-// export const tablet = (props) => {
-//     return css`
-//          @media only screen and (max-width: 780px){
-//             ${props}
-//          }
-//     `
-// }
+export const mobileL = (props) => {
+    return css`
+         @media only screen and (max-width: 430px){
+            ${props}
+         }
+    `
+}
